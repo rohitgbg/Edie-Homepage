@@ -1,0 +1,61 @@
+.section__applications {
+  margin-bottom: 8rem;
+  &-title {
+    margin: 3rem;
+  }
+
+  &-see-more {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    color: #2d9cdb;
+    font-size: 1.5rem;
+
+    @media (min-width: 550px) {
+      text-align: right;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.applications {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 0;
+  padding: 0 1rem;
+
+  @media (min-width: 550px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.application {
+  &__image {
+    margin-bottom: 1rem;
+
+    img {
+      border-radius: 18px;
+    }
+  }
+
+  @media (min-width: 550px) {
+    &--1 {
+      margin-top: 10rem;
+    }
+
+    &--3 {
+      margin-top: 10rem;
+    }
+  }
+
+  &__details {
+    &-title {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #828282;
+    }
+
+    &-subtitle {
+      font-size: 1.8rem;
+    }
+  }
+}

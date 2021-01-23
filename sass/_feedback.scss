@@ -1,0 +1,38 @@
+.section__feedback {
+  margin-top: 8rem;
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    @media (min-width: 550px) {
+      width: 70%;
+    }
+  }
+}
+
+.feedback__person {
+  display: flex;
+  margin-top: 2rem;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    margin-right: 2rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-name {
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
+
+    &-company {
+      color: #828282;
+      font-size: 1.8rem;
+    }
+  }
+}

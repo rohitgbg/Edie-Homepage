@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
+
+//Font family
+$font-display: 'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-heebo: 'Heebo', sans-serif;
+
+//font size
+$text-xs: 1rem;
+$text-sm: 1.4rem;
+$text-md: 2rem;
+$text-lg: 4rem;
+
+//spaces
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2.5rem;
+$space-lg: 3rem;
+$space-xl: 5rem;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: $font-display;
+  line-height: 1.6;
+}
+
+.header-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+.hero-image-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  height: 23vh;
+
+  @media (min-width: 550px) {
+    height: 25rem;
+  }
+
+  @media (min-width: 768px) {
+    height: 30rem;
+  }
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 4rem;
+
+  @media (min-width: 550px) {
+    padding: 2rem 10rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem 15rem;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #333333;
+
+  @media (min-width: 768px) {
+    max-width: 40vw;
+  }
+
+  @media (min-width: 950px) {
+    max-width: 35vw;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #4f4f4f;
+  @media (min-width: 768px) {
+    max-width: 40vw;
+  }
+
+  @media (min-width: 950px) {
+    max-width: 35vw;
+  }
+}
+
+.main-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.color-white {
+  color: #fff !important;
+}

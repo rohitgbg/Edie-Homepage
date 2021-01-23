@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-weight: 800;
+    font-size: 2.4rem;
+  }
+
+  &__nav-mobile {
+    height: 2px;
+    width: 25px;
+    background: #000000;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 2px;
+      width: 25px;
+      background: #000000;
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: 7px;
+    }
+
+    &::after {
+      top: -7px;
+    }
+
+    @media (min-width: 649px) {
+      display: none;
+    }
+  }
+
+  &__nav-desktop {
+    display: flex;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+
+    &__nav-item {
+      margin-left: 2rem;
+
+      & > a {
+        font-size: 1.5rem;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.hero {
+  margin-bottom: 5rem;
+  &__main {
+    &__title-question {
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #2d9cdb;
+    }
+
+    &__subtitle {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    &__image {
+      border-radius: 18px;
+      height: 100%;
+    }
+
+    &__join {
+      &-title {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #828282;
+      }
+    }
+  }
+}
+
+.hero__main__join-form-group {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid #cdd9ed;
+  width: 100%;
+  background: #f2f2f2;
+
+  @media (min-width: 500px) {
+    max-width: 50vw;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 40vw;
+  }
+
+  @media (min-width: 950px) {
+    max-width: 35vw;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+    background: #f2f2f2;
+    border-radius: 12px;
+    border: none;
+    transition: border 0.3s ease;
+    &:focus {
+      outline: none;
+      border-color: #275efe;
+    }
+  }
+
+  button {
+    background: #2d9cdb;
+    border-radius: 12px;
+    margin: 0.2rem;
+    width: 10rem;
+    color: #f2f2f2;
+  }
+}
